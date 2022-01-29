@@ -120,6 +120,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "JCPG-FE"
+    }
+  },
+  "defaultProject": "JCPG-FE",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
