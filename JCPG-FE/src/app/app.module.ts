@@ -1,20 +1,24 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CvComponent } from './cv/cv.component';
-import { GeneratorComponent } from './generator/generator.component';
-import { GamecornerComponent } from './gamecorner/gamecorner.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './routes/home/home.component';
+import { GeneratorComponent } from './routes/home/generator/generator.component';
+import { CvComponent } from './routes/cv/cv.component';
+import { BlogComponent } from './routes/blog/blog.component';
+import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CvComponent,
+    HomeComponent,
     GeneratorComponent,
-    GamecornerComponent,
-    HomeComponent
+    CvComponent,
+    BlogComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

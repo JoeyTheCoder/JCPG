@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GeneratorComponent } from './generator.component';
 
@@ -6,12 +6,12 @@ describe('GeneratorComponent', () => {
   let component: GeneratorComponent;
   let fixture: ComponentFixture<GeneratorComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ GeneratorComponent ]
     })
     .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(GeneratorComponent);
