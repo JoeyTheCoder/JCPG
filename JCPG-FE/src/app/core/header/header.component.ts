@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   goHome(){
-    this.router.navigate("")
+    window.location.href="/"
   }
 
   ngOnInit(): void {
