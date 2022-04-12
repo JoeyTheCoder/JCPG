@@ -10,3 +10,4 @@ RUN pip install requests
 COPY ./app /app
 
 CMD ["uvicorn", "main:app", "--host=0.0.0.0" , "--reload" , "--port", "80"]
+
