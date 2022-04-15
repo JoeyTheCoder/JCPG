@@ -1,8 +1,14 @@
+import numbers
 import requests
 import json
+import typing
 
-def getPokemon():
-    response = requests.get('https://pokeapi.co/api/v2/pokemon')
-    print(response)
-    pokemonOutput = json.loads(response.text)
+import random
+
+
+
+
+def getPokemon(item_id: int):
+    response = requests.get('https://pokeapi.co/api/v2/pokemon/' + item_id),
+    pokemonOutput = json.loads(response[0].text)
     return pokemonOutput

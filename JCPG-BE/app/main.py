@@ -1,3 +1,5 @@
+import numbers
+from tokenize import Number
 from typing import Optional
 from fastapi import FastAPI
 from core_logic import pokemon
@@ -23,7 +25,7 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/pokemon")
-def getPokemon():
-    response = pokemon.getPokemon()
+@app.get("/pokemon/{item_id}")
+async def getPokemon (item_id):
+    response = pokemon.getPokemon(item_id)
     return response
